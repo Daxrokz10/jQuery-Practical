@@ -12,12 +12,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- SLICK SLIDER CSS/JS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- jQuery JS -->
     <script src="./js/jquery-3.7.1.min.js"></script>
@@ -28,12 +39,203 @@
     <!-- MEDIA CSS -->
     <link rel="stylesheet" href="./css/Responsive/media.css">
 
+    <!-- APEXCHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
+
 </head>
 
 <body>
 
+
+    <!---------------------- N A V I G A T I O N - B A R ---------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#admin-panel-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="admin-panel-navigation">
+                    <ul class="navbar-nav flex-column gap-2 ms-2" id="my-tab">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tooltip" data-bs-title="Home"
+                                data-bs-placement="right" href="#home"><i
+                                    class="bi bi-house-door py-1 px-2 rounded-3 fs-4 shadow bg-white"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-title="Slider"
+                                data-bs-placement="right" href="#slider"><i
+                                    class="fa-solid fa-sliders py-1 px-2 rounded-3 fs-4 shadow bg-white"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-title="Table"
+                                data-bs-placement="right" href="#table"><i
+                                    class="bi bi-pin-map-fill py-1 px-2 rounded-3 fs-4 shadow bg-white"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-title="Login/out"
+                                data-bs-placement="right" href="./login-logout.html"><i
+                                    class="bi bi-box-arrow-in-right py-1 px-2 rounded-3 fs-4 shadow bg-white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+        <section id="home">
+            <div class="container">
+
+                <h2>DASHBOARD</h2>
+
+                <div class="charts">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div id="d-chart1">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div id="d-chart2">
+                                <div id="timeline-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COUNTERS -->
+                <div class="counter-analytics">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399323.2442404357!2d72.35758781433103!3d20.944927693000675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e1!3m2!1sen!2sin!4v1732860437712!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="row text-center">
+                                <div class="col-6">
+                                    <div class="counter-box">
+                                        <i class="fa-solid fa-eye"></i>
+                                        <h3 class="counter" data-speed="1000">300</h3>
+                                        <p>Total Views</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="counter-box">
+                                        <i class="fa-solid fa-bug"></i>
+                                        <h3 class="counter " data-speed="2000">11</h3>
+                                        <p>Bugs Fixed</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="counter-box">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <h3 class="counter" data-speed="2000">5</h3>
+                                        <p>Reports</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="counter-box">
+                                        <i class="fa-solid fa-user"></i>
+                                        <h3 class="counter" data-speed="9000">1.2k</h3>
+                                        <p>Users</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDES -->
+        <section id="slider" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Student Work</h2>
+
+                <div class="post-slider d-flex flex-nowrap overflow-x-scroll">
+                    <div><img
+                          src="./assets/smp-1.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-2.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-3.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-4.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-5.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-6.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-7.png" loading="lazy" alt=""></button></div>
+                    <div><img
+                          src="./assets/smp-8.png" loading="lazy" alt=""></button></div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- LOCATIONS -->
+        <section id="table">
+            <div class="container">
+                <h2 class="text-center">Locations</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">Sr.no</th>
+                        <th scope="col">Opening Date</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Students</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Sr.no">1</td>
+                        <td data-label="Opening Date">04/01/2016</td>
+                        <td data-label="Location">Baroda</td>
+                        <td data-label="Students">500</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Sr.no">2</td>
+                        <td data-label="Opening Date">03/01/2016</td>
+                        <td data-label="Location">Surat</td>
+                        <td data-label="Students">600</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Sr.no">3</td>
+                        <td data-label="Opening Date">03/01/2016</td>
+                        <td data-label="Location">Surat</td>
+                        <td data-label="Students">350</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Sr.no">4</td>
+                        <td data-label="Opening Date">02/01/2016</td>
+                        <td data-label="Location">Navsari</td>
+                        <td data-label="Students">400</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container d-flex justify-content-around">
+            <p>&copy; 2019-2020. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/daksh-gagnani-444482314/">Work of Daksh Gagnani</a>
+        </div>
+    </footer>
+
+
+
 </body>
 
-    <!-- CUSTOM SCRIPT -->
-    <script src="./js/script.js"></script>
+<!-- SLICK JS -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- CUSTOM SCRIPT -->
+<script src="./js/script.js"></script>
+
 </html>

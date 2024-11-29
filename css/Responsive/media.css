@@ -1,20 +1,44 @@
 /* XXL */
 
 @media(max-width:1920px){
+    /* MAP */
 
+    .counter-analytics iframe{  /*will need mq*/
+        height: 310px;
+        width: 640px;
+        border-radius: var(--b-radius);
+      }
 }
 
 
 /* XL  */
 
 @media(max-width:1399px){
+    .counter-analytics iframe{  /*will need mq*/
+        height: 300px;
+        width: 550px;
+        border-radius: var(--b-radius);
+      }
+}
 
+/* L */
+@media(max-width:1199px){
+    .counter-analytics iframe{  /*will need mq*/
+        height: 300px;
+        width: 450px;
+        border-radius: var(--b-radius);
+      }
 }
 
 /* M  */
 
 @media(max-width:991px){
-
+    .counter-analytics iframe{  /*will need mq*/
+        height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: var(--b-radius);
+      }
 }
 
 /* S  */

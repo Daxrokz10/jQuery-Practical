@@ -3,3 +3,180 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Roboto", serif;
+    background-color: #19191e;
+    color: whitesmoke;
+}
+:root{
+    --gradient: linear-gradient(to right, #fdcbf1, #a6dee9);
+    --b-radius: 8px;
+    --b-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* NAVBAR */
+
+.nav-item{
+    margin-top: 50px;
+}
+.navbar i:hover {
+    color: white;
+    background-clip: text;
+}
+.navbar-nav{
+    margin-top: 5%;/*might need mq*/
+}
+
+/* DASHBOARD CHART */
+#home{
+    margin-top: -40px;
+}
+h2{
+    font-size: 40px;
+    margin: 100px 0;
+}
+
+#d-chart1 {
+    max-width: 650px;
+    margin: 35px auto;
+    border-radius: var(--b-radius);
+    box-shadow: var(--b-shadow);
+  }
+ 
+  #d-chart2 {
+    max-width: 760px;
+    margin: 35px auto;
+    opacity: 0.9;
+    border-radius: var(--b-radius);
+    box-shadow: var(--b-shadow);
+  }
+  
+  #timeline-chart .apexcharts-toolbar {
+    opacity: 1;
+    border: 0;
+  }
+  
+  /* counter-analytics   */
+
+  .counter-analytics .counter-box{
+    background-color: #19191e;
+    border-radius: var(--b-radius);
+    box-shadow: var(--b-shadow);
+    height: 150px;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .counter-analytics .counter-box i{
+    font-size: 40px;
+    background-image: var(--gradient);
+    color: transparent;
+    background-clip: text;
+    margin-top: 20px;
+  }
+  .counter-analytics iframe{  /*will need mq*/
+    height: 300px;
+    width: 550px;
+    border-radius: var(--b-radius);
+  }
+
+/* TABLE */
+#table{
+    padding-bottom: 80px
+}
+table {
+    border: 1px solid #ccc;
+    border-radius: var(--b-radius);
+    box-shadow: var(--b-shadow);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #000;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+
+/* SLIDER */
+
+.post-slider img{
+    margin: 0 20px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    margin-bottom: 0;
+}
