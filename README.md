@@ -1,11 +1,12 @@
 # jQuery Admin Panel Practical
+View the Website [here](https://jquery-practical-daksh.netlify.app/)
 
 ## Features
 - Feature 1: Working Login Page
 - Feature 2: Dynamic Counters
 - Feature 3: Dynamic Apexcharts
 - Feature 4: Responsive
-
+- Feature 5: Working Slider without JS
 ## Tech Stack
 This project is built using the following technologies:
 - **Frontend:**
