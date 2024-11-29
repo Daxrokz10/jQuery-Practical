@@ -1,6 +1,9 @@
 # jQuery Admin Panel Practical
 View the Website [here](https://jquery-practical-daksh.netlify.app/)
 
+## Preview
+![website-image](image.png)
+
 ## Features
 - Feature 1: Working Login Page
 - Feature 2: Dynamic Counters
