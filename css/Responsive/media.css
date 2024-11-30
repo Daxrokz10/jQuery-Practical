@@ -56,5 +56,7 @@
 /* XXS */
 
 @media(max-width:412px){
-    
+    .post-slider{
+      scrollbar-width: none;
+    }
 }
