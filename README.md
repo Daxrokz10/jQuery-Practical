@@ -1,6 +1,8 @@
 # jQuery Admin Panel Practical
 View the Website [here](https://jquery-practical-daksh.netlify.app/)
 
+!!SLIDER NOT WORKING IN DEPLOY VERSION!!
+
 ## Preview
 ![website-image](image.png)
 
